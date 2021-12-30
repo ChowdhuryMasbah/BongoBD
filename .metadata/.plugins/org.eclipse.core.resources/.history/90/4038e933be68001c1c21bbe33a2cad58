@@ -1,0 +1,29 @@
+package BongoBd.SqaCodeTest;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+
+import BongoBd.SqaCodeTest.Base;
+import PageObjects.LandingPage;
+
+public class PlayFreeContent extends Base {
+
+	@Test
+	public void findcontent() throws IOException{
+		driver = initialzeddriver();
+		driver.manage().window().maximize();
+		driver.get("https://bongobd.com");
+		driver.switchTo().alert().dismiss();
+		
+		
+		LandingPage lp=new LandingPage(driver);
+		lp.serachCcon().click();
+		lp.serachCcon().sendKeys("Birds Eye");
+		lp.serachCcon().click();
+	
+		
+	}
+
+}

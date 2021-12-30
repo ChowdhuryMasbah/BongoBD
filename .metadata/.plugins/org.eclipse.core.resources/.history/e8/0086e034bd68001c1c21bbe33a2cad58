@@ -1,0 +1,18 @@
+package PageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class LandingPage {
+	 WebDriver driver;
+	 
+	 By SearchBtn= By.xpath("//*[@id=\"root\"]/div/div/div/div[2]/header/div/div/div[2]/div[2]/div[1]/div[2]/input");
+	 
+	 
+	 public  WebElement serachCcon() {
+		 return driver.findElement(SearchBtn) ;
+	 }
+
+}
+

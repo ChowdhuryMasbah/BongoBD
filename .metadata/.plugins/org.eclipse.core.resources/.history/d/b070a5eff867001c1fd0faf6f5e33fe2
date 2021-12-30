@@ -1,0 +1,33 @@
+package BongoBd.SqaCodeTest;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class Base {
+	
+	public void initialzeddriver() throws IOException {
+		Properties prop=new Properties();
+		FileInputStream fis= new FileInputStream("C:\\work from home\\BongoBD\\SqaCodeTest\\src\\main\\java\\BongoBd\\SqaCodeTest\\data.properties");
+
+		prop.load(fis);
+		String browserName= prop.getProperty("browser");
+		
+		if(browserName.equals("Chrome")) {
+			//chrome	
+		}
+		else if (browserName.equals("firefox")) {
+			//firefox
+		}
+		else if (browserName.equals("edge")) {
+			//edge
+		}
+		
+		
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,25 @@
+package BongoBd.SqaCodeTest;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+
+import BongoBd.SqaCodeTest.Base;
+import PageObjects.LandingPage;
+
+public class PlayFreeContent extends Base {
+
+	@Test
+	public void findcontent() throws IOException{
+		driver = initialzeddriver();
+		driver.get("https://bongobd.com");
+		
+		LandingPage lp=new LandingPage();
+		lp.serachCcon().click();
+		lp.serachCcon().sendKeys("tanzil");
+	
+		
+	}
+
+}
