@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="BongoBd.SqaCodeTest.AppTest"/>
       <class name="BongoBd.SqaCodeTest.PlayFreeContent"/>
     </classes>
   </test> <!-- Test -->
